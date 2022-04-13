@@ -1,0 +1,10 @@
+{
+    "project_name": "yass_base_app",
+    "repo_name": "example_repo",
+    "author_name": "santi",
+    "author_email": "santi@yass.tech",
+
+    "_copy_without_render": [
+        ".github/*"
+    ]
+}

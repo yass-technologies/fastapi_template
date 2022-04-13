@@ -1,0 +1,2 @@
+db:
+  db_url: "sqlite:///./sql_app.db"

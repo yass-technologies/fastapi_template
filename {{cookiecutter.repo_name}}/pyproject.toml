@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "0.1.0"
+description = ""
+authors = ["{{cookiecutter.author_name}} {{cookiecutter.author_email}}"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.75.0"
+python-dotenv = "^0.20.0"
+sqlmodel = "^0.0.6"
+SQLAlchemy = "^1.4.34"
+dependency-injector = {extras = ["yaml"], version = "^4.39.1"}
+uvicorn = "^0.17.6"
+pydantic = {extras = ["email"], version = "^1.9.0"}
+pytest-cov = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.942"
+isort = "^5.10.1"
+sqlalchemy-stubs = "^0.4"
+requests = "^2.27.1"
+cookiecutter = "^1.7.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
