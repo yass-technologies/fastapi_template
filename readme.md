@@ -16,6 +16,13 @@ The project structure will branch out in the following submodules:
     This is a default domian mapping that comes predefine as a guide to understand how to map new domains in their own subfolder. 
 
 
+## CI/CD:
+We've included several github actions for your convinient development. 
+1. pytest action : on each merge will run all tests under `tests` folder.
+2. atuoformating action: on each merge runs `isort` and `balck` to make sure the code style on the release branch is concistent.
+3. deploy action: this is a simple heroku deployment action which can help you deploy your app without the heroku-github integration. You'll need to configure some repo variables (follow this guide: https://dev.to/heroku/deploying-to-heroku-from-github-actions-29ej ). The job only runs when merging to master.
+
+
 ## How to install it:
 You'll need poetry dependency manager.
 
